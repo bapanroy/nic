@@ -4,10 +4,10 @@
 
 @section('content')
 <h2>Item Groups</h2>
-
-<a href="{{ route('item-groups.create') }}" class="btn btn-primary">Create New Item Group</a>
-
-<table class="table table-striped">
+<div class="col-sm-6">
+    <a href="{{ route('item-groups.create') }}" class="btn btn-primary">Create New Item Group</a>
+</div>
+<table class="table table-striped" id="datatablesSimple">
     <thead>
         <tr>
             <th>#</th>

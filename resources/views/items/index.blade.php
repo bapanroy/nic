@@ -4,8 +4,9 @@
 
 @section('content')
 <h2>Items</h2>
-<a href="{{ route('items.create') }}">Create New Item</a>
-<table class="table table-striped">
+<div class="col-sm-6"><a href="{{ route('items.create') }}" class="btn btn-primary">Create New Item</a></div>
+
+<table class="table table-striped" id="datatablesSimple">
     <thead>
         <tr>
             <th>Name</th>

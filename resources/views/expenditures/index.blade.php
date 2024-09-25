@@ -4,9 +4,10 @@
 
 @section('content')
 <h2>Expenditures</h2>
-<a href="{{ route('expenditures.create') }}" class="btn btn-primary">Add New Expenditure</a>
-
-<table class="table table-striped">
+<div class="col-sm-6">
+    <a href="{{ route('expenditures.create') }}" class="btn btn-primary">Add New Expenditure</a>
+</div>
+<table class="table table-striped" id="datatablesSimple">
     <thead>
         <tr>
             <th>ID</th>
