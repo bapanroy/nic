@@ -13,23 +13,24 @@
 
 <body>
 
-    <div class="container justify-content-center">
-        @session("success")
-        <div class="alert" id="success-alert">
-            {{ session("success") }}
+    <div class="container d-flex justify-content-center">
+        <div class="card shadow-lg border-0 rounded-lg mt-5 col-lg-5">
+            @session("success")
+            <div class="alert" id="success-alert">
+                {{ session("success") }}
+            </div>
+            @endsession
+
+            @session("error")
+            <div class="alert alert-error" id="error-alert">
+                {{ session("error") }}
+            </div>
+            @endsession
+
+            @yield("content")
+
         </div>
-        @endsession
-
-        @session("error")
-        <div class="alert alert-error" id="error-alert">
-            {{ session("error") }}
-        </div>
-        @endsession
-
-        @yield("content")
-
     </div>
-
 </body>
 
 </html>
