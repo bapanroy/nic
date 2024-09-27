@@ -10,7 +10,7 @@
         <p><strong>Item Group:</strong> {{ $item->itemGroup->name }}</p>
         <p><strong>Price:</strong> ${{ $item->price }}</p>
 
-        <a href="{{ route('items.index') }}">Back to Items List</a>
+        <a href="{{ route('items.index') }}" class="btn btn-primary">Back to Items List</a>
     </div>
 </div>
 @endsection

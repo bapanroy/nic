@@ -23,8 +23,8 @@
     </div>
     <div class="form-group">
         <label for="price">Price:</label>
-        <input type="number" id="price" class="form-control" name="price" value="{{ $item->price }}" step="0.01">
+        <input type="number" id="price" class="form-control mb-3" name="price" value="{{ $item->price }}" step="0.01">
     </div>
-    <button type="submit" class="btn btn-secondary">Update Item</button>
+    <button type="submit" class="btn btn-primary">Update Item</button>
 </form>
 @endsection

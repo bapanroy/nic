@@ -21,10 +21,10 @@
         </div>
         <div class="form-group">
             <label for="price">Price:</label>
-            <input type="number" id="price" class="form-control" name="price" step="0.01">
+            <input type="number" id="price" class="form-control mb3" name="price" step="0.01">
         </div>
         <div class="mt-4 mb-0">
-            <button type="submit" class="btn btn-secondary">Create Item</button>
+            <button type="submit" class="btn btn-primary">Create Item</button>
         </div>
     </form>
 </div>
